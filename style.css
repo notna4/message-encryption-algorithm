@@ -1,0 +1,46 @@
+html {
+  background-color: #00001c;
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+p {
+  color: #ade9b3;
+  font-size: 20px;
+}
+
+textarea {
+  height: 400px;
+  width: 100%;
+  word-break: break-word;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  border: none;
+  background-color: #00001c;
+  color: #f8f6f5;
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+}
+
+button {
+  margin: 35px;
+  height: 50px;
+  width: 250px;
+  border: none;
+  border-radius: 100px;
+  background-color: #a5e3ac;
+  color: #f8f6f5;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 17px;
+  transition: 0.2s all;
+}
+
+button:hover {
+  background-color: #ade9b3;
+  cursor: pointer;
+}

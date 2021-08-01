@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptic Messages</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button class="decrypt-btn" onclick="window.location.href='decrypt.html'">
+      Decrypt a message
+    </button>
+    <textarea id="input" placeholder="Write message"></textarea>
+    <button id="btn">Encrypt your message</button>
+    <div class="container">
+      <p id="initial"></p>
+      <p id="ecrypted-m"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
