@@ -14,9 +14,13 @@
     />
   </head>
   <body>
-    <button class="decrypt-btn" onclick="window.location.href='decrypt.html'">
-      Decrypt a message
-    </button>
+    <div class="header">#MESSAGE-ENCRYPTION</div>
+    <div class="main-btns">
+      <button class="decrypt-btn" onclick="window.location.href='decrypt.html'">
+        Decrypt a message
+      </button>
+      <button id="key" class="key"></button>
+    </div>
     <textarea id="input" placeholder="Write message"></textarea>
     <button id="btn">Encrypt your message</button>
     <div class="container">

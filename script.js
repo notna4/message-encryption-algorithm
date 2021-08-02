@@ -24,6 +24,9 @@ function generateKey(random) {
     k++;
   }
   console.log(key);
+
+  var keyCard = document.getElementById("key");
+  keyCard.textContent = "Session key: " + "{" + key + "}";
 }
 
 function generateRandomInt(min, max) {
@@ -65,7 +68,7 @@ function encrypt(text, key) {
 
   var body = document.querySelector("body");
   var btnCopy = document.createElement("button");
-  btnCopy.textContent = "Copy encrypted message";
+  btnCopy.textContent = "Copy encrypted message and key";
   btnCopy.id = "copyBtn";
 
   btnCopy.onclick = function () {
@@ -94,7 +97,7 @@ function copyData(text, key) {
   document.body.removeChild(el);
 
   var btnCopy = document.getElementById("copyBtn");
-  btnCopy.textContent = "Copied encrypted message";
+  btnCopy.textContent = "Copied encrypted message and key";
   btnCopy.style.backgroundColor = "grey";
 }
 

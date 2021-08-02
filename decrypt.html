@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="header">#MESSAGE-ENCRYPTION</div>
     <button class="decrypt-btn" onclick="window.location.href='index.html'">
       Encrypt another message
     </button>
     <textarea
       id="encrypted-msg"
-      placeholder="Paste encrypted message"
+      placeholder="Paste encrypted message and key"
     ></textarea>
     <button id="btn-decrypt" onclick="getEncryptedData()">Decrypt</button>
     <p id="decrypted"></p>
